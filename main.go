@@ -39,7 +39,7 @@ func main() {
 	http.HandleFunc("/contact", contact)
 	http.HandleFunc("/projects", projects)
 
-	http.Handle("/styles/", http.StripPrefix("/styles/", http.FileServer(http.Dir("public/css/"))))
+	http.Handle("/styles/", http.StripPrefix("/styles/", http.FileServer(http.Dir("../public/css/"))))
 	http.ListenAndServe(":8000", nil)
 }
 
