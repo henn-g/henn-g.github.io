@@ -34,12 +34,16 @@ var workingDir string
 func main() {
 	initTemplates()
 
+	var fileServer = http.FileServer(http.Dir("public/images"))
+
 	http.HandleFunc("/", home)
 	http.HandleFunc("/about", about)
 	http.HandleFunc("/contact", contact)
 	http.HandleFunc("/projects", projects)
 
 	http.Handle("/styles/", http.StripPrefix("/styles/", http.FileServer(http.Dir("public"))))
+	http.Handle("/images/", http.StripPrefix("/images", fileServer))
+	
 	http.ListenAndServe(":8000", nil)
 }
 
