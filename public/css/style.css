@@ -18,3 +18,8 @@ img.centerContent {
   width: 900px;
   height: 600px;
 }
+/* need to individually scale images properly */
+img.scaleDefault {
+  max-width: 100%;
+  height: auto;
+}
