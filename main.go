@@ -9,9 +9,9 @@ import (
 
 /*
  Simple server to host my portfolio site
- Capabilities:
-		- host simple static pages with images
-		- design in context for 127 class
+ Overall TODO:
+		- Defer to finishing stretch goals as the base features have
+			been satisfied
 
  Stretch Goals:
 		- Implement "contact me" functionality
@@ -21,7 +21,7 @@ import (
 		- Put current RELEVANT projects on site
 		- (VERY STRETCH) Short, quick blog posts
 			(like things I learn about golang / swift along the way)
-
+			- A system to automate / simplify adding content to site
 	Outstanding Problems:
 		-
 */
